@@ -7,6 +7,7 @@ public abstract class Content implements Comparable<Content> {
 	protected ImageIcon icon;
 	protected String title, artist;
 	protected int numberOfTimesStreamed;
+	protected float length;
 	
 	public abstract void play();
 	

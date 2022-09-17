@@ -3,6 +3,7 @@ package com.swdhahn.com.gui.main;
 import java.util.ArrayList;
 
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 import com.swdhahn.com.basics.Content;
 import com.swdhahn.com.basics.Song;
@@ -24,7 +25,7 @@ public class MainView extends JPanel {
 		
 		playlistView.updateSongs(songs);
 
-		this.add(playlistView);
+		this.add(new JScrollPane(playlistView));
 
 		
 	}
